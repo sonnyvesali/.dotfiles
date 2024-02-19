@@ -1,0 +1,13 @@
+[user]
+	name = Sonny Vesali
+	email = 79886185+sonnyvesali@users.noreply.github.com
+[credential]
+	helper = store
+[credential "https://github.com"]
+	helper = 
+	helper = !/opt/homebrew/bin/gh auth git-credential
+[credential "https://gist.github.com"]
+	helper = 
+	helper = !/opt/homebrew/bin/gh auth git-credential
+[init]
+	defaultBranch = development
