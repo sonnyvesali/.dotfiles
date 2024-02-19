@@ -1,10 +1,9 @@
+#!/usr/bin/env bash
 xcode-select ---install
 
 sudo xcodebuild -license
 
 git clone https://github.com/sonnyvesali/.dotfiles
-
-#!/usr/bin/env bash
 
 if test ! $(which brew); then
     echo "Installing homebrew..."
@@ -12,4 +11,4 @@ if test ! $(which brew); then
 fi
 
 brew update
-brew bundle
+brew bundle --file ~/.dotfiles/brew/Brewfile
